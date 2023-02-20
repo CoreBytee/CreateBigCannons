@@ -87,7 +87,7 @@ public class AutocannonBreechBlockEntity extends AutocannonBlockEntity implement
 		int cooldown = FIRE_RATES[this.fireRate - 1];
 		return 1200 / cooldown;
 	}
-	public boolean canFire() { return this.getFireRate() > 0 && this.firingCooldown <= 0; }
+	public boolean canFire() { return true }
 
 	public void handleFiring() {
 		if (this.fireRate > 0 && this.fireRate <= FIRE_RATES.length) {
